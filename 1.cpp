@@ -22,13 +22,29 @@ int main(){
 
 
 	}
+}
+// program 3
+int main(){
+	while(true){ // for infinte loop 
+	int n;
+	cin>>n;
+	
+	
+		if(n==42){
+			break;
+		}
+	cout<<n<<endl;
+	} 
+
+}
+
 
 
 
 
 	 
 
-}
+
 
 
 
