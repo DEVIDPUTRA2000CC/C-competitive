@@ -37,6 +37,24 @@ int main(){
 	} 
 
 }
+// program no. 4
+
+
+int main(){ 
+	int n;
+	cin>>n;
+	int digit_sum = 0;
+	while(n>0){
+		int last_digit = n%10; // take last digit out 
+		digit_sum = digit_sum + last_digit;
+		n = n/10; // we use this to remove last digit 
+		
+	}
+	cout<<"sum of digits : "<<digit_sum<<endl;
+
+	
+
+}
 
 
 
