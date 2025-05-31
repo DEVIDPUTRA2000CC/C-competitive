@@ -40,3 +40,40 @@ int main(){
 1 1 1 1
 1 1 2 3
 3 4 5 6
+
+
+
+
+
+
+//question on vector
+
+	int solve(vector<int> &v, int n) {
+	int l = 0, r = n-1;
+	while(l < r) {
+		int mid = l+(r-l)/2;
+		if((mid%2 == 0 && v[mid] == v[mid+1]) || (mid%2 == 1 && v[mid] == v[mid-1])) {
+			l = mid+1;
+		} else {
+			r = mid;
+		}
+	}
+	return v[l];
+}
+
+
+int main() { 
+	int n;
+	cin>>n;
+	vector<int> v(n);
+	for(int i = 0; i < v.size(); i++) {
+		cin>>v[i];
+
+	}
+	
+	cout<<solve(v, n);
+}
+
+
+
+	
