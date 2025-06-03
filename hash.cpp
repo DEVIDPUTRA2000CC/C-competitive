@@ -51,4 +51,30 @@ int main(){
 
 }
 
+// if use 256 size array hashing 
+
+int main(){
+	 
+ string s;
+ cin>>s;
+ int q;
+ cin>>q;
+ // precomputing 
+ int hash[256] = {0};
+ for(int i =0; i<s.size(); ++i){
+ 	hash[s[i]]++;
+ }
+  while(q--){
+ 	char c;
+ 	cin>> c;
+ 	//fetch
+ 	cout<<hash[c]<<endl;
+
+
+ }
+// here in 256 size array all character index are define so no need of subtraction char with 'a'
+}
+
+
+
 
