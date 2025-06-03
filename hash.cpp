@@ -9,6 +9,7 @@ int main(){
   for(int i=0; i<n; ++i){
   	cin>> arr[i];
   }
+  // precomputing 
   int hash[13] = {0};
   for(int i=0; i<n; ++i){
   	hash[arr[i]] +=1;
@@ -19,8 +20,35 @@ int main(){
   while(q--){
   	int num;
   	cin>>num;
+    // fetch
   	cout<<hash[num]<<endl;
   }
 
 }
+
+// character hashing 
+
+
+int main(){
+	 
+ string s;
+ cin>>s;
+ int q;
+ cin>>q;
+ // precomputing 
+ int hash[26] = {0};
+ for(int i =0; i<s.size(); ++i){
+ 	hash[s[i] - 'a']++;
+ }
+  while(q--){
+ 	char c;
+ 	cin>> c;
+ 	//fetch
+ 	cout<<hash[c-'a']<<endl;
+
+
+ }
+
+}
+
 
