@@ -101,5 +101,37 @@ int main(){
 	return 0;
 	}
 
+// finding second largest brute force 
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+		int n;
+		cin>>n;
+		int a[n];
+		for(int i=0; i<n; i++){
+			cin>>a[i];
+		}
+		int mx = a[0];
+		for(int i=0; i<n; i++){
+			if(a[i] > mx){
+				mx = a[i];
+			}
+         
+		}
+		cout<<"second largest value: ";
+		int smx = -1; // assuming all elements of array are +ve if  not then use INT_MIN; 
+        for(int i=0; i<n; i++){
+        	if(a[i]>smx && a[i]!= mx){
+        		smx = a[i];
+        	}
+        }
+        cout<<smx<<endl;
+
+	}
+	
+     }
+   
+
 
 	
