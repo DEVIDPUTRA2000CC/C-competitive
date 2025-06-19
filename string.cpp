@@ -35,3 +35,20 @@ stoi(s); // string to int
 }
 
 }
+
+
+// question on string of most occure sprefix in an array of strings 
+
+int main(){
+	string strs[3]={"flower", "flow","flight"};
+	
+	int st =0;
+	int n =min(strs.size());
+    while(st<n && str1[st]==str2[st]){
+    	st++;
+    }
+    string prefix = str1.substr(0, st);
+  cout<<prefix;
+}
+	
+	
