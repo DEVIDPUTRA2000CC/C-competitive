@@ -50,5 +50,32 @@ int main(){
     string prefix = str1.substr(0, st);
   cout<<prefix;
 }
+
+// reversing the words of string 
+int main(){
+	string s;
+	getline(cin, s);
+	int st=0, end=s.size()-1;
+
+	while(st<end){
+		swap(s[st], s[end]);
+		st++; end--;
+	}
+	int n= s.size();
+	for(int i=0; i<n; i++){
+	string word ="";
+	while(i<n && s[i]!=' '){
+		word+=s[i];
+		i++;
+	} reverse(word.begin(), word.end());
+	string ans ="";
+	if(word.size()>0){
+	ans +=" "+word;
+}
+	cout<<ans;
+}
+
+} // for eg. input "the sky is blue" output "blue is sky the"
+
 	
 	
